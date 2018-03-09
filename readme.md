@@ -13,6 +13,13 @@ Start in Docker:
 > docker run -p8089:8088 --name demotitle_container demotitle_image
 (use option -d for background)
 
-run inside docker (exposed 8088, mapped from container to localhost as 8089)
+runs springboot inside docker (exposed 8088, mapped from container to localhost as 8089)
 > http://localhost:8089/api/demotitle
-> http://localhost:8089/h2 
+> http://localhost:8089/h2
+
+Delete container
+> docker rm demotitle_container
+
+
+Next steps might be:
+- add another service .. link multiple containers by docker-compose.yml    
