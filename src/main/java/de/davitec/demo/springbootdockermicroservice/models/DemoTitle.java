@@ -9,11 +9,10 @@ public class DemoTitle {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
-
-
+    
     @Column(name="TITLE")
     private String title;
-    
+
     public long getId() {
         return id;
     }
