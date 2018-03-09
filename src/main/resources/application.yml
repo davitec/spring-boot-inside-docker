@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  profiles:
+    active: dev
+---
+############
+# DEV
+############
+spring:
+  profiles: dev
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
+
+
+
